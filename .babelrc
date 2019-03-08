@@ -1,0 +1,6 @@
+ {
+   "preset": [
+     "next/babel"
+   ],
+   "plugins": []
+ }
