@@ -1,10 +1,10 @@
-
+import React from 'react';
 const Footer = () => (
-    <React.partial>
+    <div>
         <section>
-            <h2>This is the footer</h2>
+            <p>This is the footer</p>
         </section>
-    </React.partial>
+    </div>
 )
 
 export default Footer

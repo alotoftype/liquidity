@@ -4,13 +4,23 @@ import Link from 'next/link';
   <nav>
     <ul>
     <li>
-    <Link href="/">
-      <a>Home </a>
+    <Link href="/about">
+      <a>About </a>
     </Link>
     </li>
     <li>
-    <Link href="/about">
-      <a>About </a>
+      <Link href="/party">
+      <a>Party</a>
+      </Link>
+    </li>
+    <li>
+      <Link href="/mixes">
+      <a>Mixes</a>
+      </Link>
+    </li>
+    <li>
+    <Link href="/community">
+      <a>Community </a>
     </Link>
     </li>
     </ul>

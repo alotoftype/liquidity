@@ -1,4 +1,23 @@
-$font-size: 50px;
+@import '../node_modules/normalize-scss/sass/normalize/_import-now';
+@import './base/variables';
+
+
 .example {
   font-size: $font-size;
+}
+
+header {
+  background-color: red;
+  height: 50px;
+  
+  ul {
+    margin: 0;
+    li {
+      display: inline-block;
+      padding: 0 24px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
 }
