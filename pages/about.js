@@ -1,10 +1,8 @@
-import  css from "../sass/styles.scss"
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Layout from '../layouts/Main';
+
 export default () => (
-<div>
-    <Header />
-    <h3> This is the about page</h3>
-    <Footer />
-  </div>
+    <Layout >
+      <section className="About"></section>
+    <h3>This is the about page</h3>
+    </Layout>
 )

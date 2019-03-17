@@ -1,9 +1,11 @@
-import Header from '../components/header';
+import Layout from '../layouts/Main';
 
-export default () => (
+export default (props) => (
 
-    <div className="community">
-      <Header/>>
-      <p>this is the community page</p>
-    </div>
+      <Layout>
+        <div className="community">
+        <p>this is the community page</p>
+        </div>
+      </Layout>
+    
 )

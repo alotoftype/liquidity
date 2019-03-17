@@ -20,7 +20,7 @@ import Link from 'next/link';
     </li>
     <li>
     <Link href="/community">
-      <a>Community </a>
+      <a>Community</a>
     </Link>
     </li>
     </ul>

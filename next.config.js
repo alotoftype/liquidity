@@ -1,5 +1,19 @@
 const withSass = require('@zeit/next-sass');
-module.exports = withSass({
-  cssModules: true,
-  target: 'server'
-});
+const withPlugins = require('next-compose-plugins');
+const withFonts  = require('next-fonts');
+const withImages = require('next-images');
+const withOptimizedImages = require('next-optimized-images');
+
+module.exports = withPlugins([
+  [withSass, {
+    cssModules: true,
+    postcssLoaderOptions: {
+      parser: true
+    },
+    target: 'server'
+  }],
+  [withImages],
+  [withFonts, {
+    enableSvg:true
+  }]
+]);

@@ -1,12 +1,13 @@
 import Head from 'next/head'
-import Wrapper from './Wrapper'
-import Nav from 'component/Nav'
-import Footer from 'components/Footer'
+import  css from "../sass/styles.scss";
+import Header from '../components/header';
+import Nav from '../components/navigation';
+import Footer from '../components/footer';
 
 
 
-export default ({children, title = 'This is the default title'}) => (
-  <Wrapper>
+export default ({children, title = 'This is the default title', css}) => (
+  <div>
     <Head>
       <title>{ title }</title>
     </Head>
@@ -19,5 +20,5 @@ export default ({children, title = 'This is the default title'}) => (
     <Footer>
       Footer
     </Footer>
-  </Wrapper>
+  </div>
 )
