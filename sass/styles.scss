@@ -2,6 +2,8 @@
 @import '../node_modules/normalize-scss/sass/normalize/_import-now';
 @import './typography/fonts';
 @import './base/variables';
+@import './layout/layout';
+@import './pages/about';
 
 
 .example {
@@ -9,12 +11,14 @@
 }
 
 header {
-  background-color: red;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
   ul {
-    margin: 0;
+    margin: 0 auto;
     li {
-      font-family: $Optima;
+      font-family: $Druk;
       font-weight: bold;
       font-size: 30px;
       display: inline-block;
@@ -22,9 +26,12 @@ header {
     }
     a {
       text-decoration: none;
-      color: green;
+      color: $peach;
     }
   }
+}
+main {
+  padding: 0 48px;
 }
 .greeting {
   h2,
@@ -35,10 +42,14 @@ header {
 }
 .about {
   color: red;
+  font-size: 24px;
+}
+.mixwrapper {
+  display: flex;
+  flex-direction: column;
 }
 .mix {
   p {
-    font-family: $Druk;
     color: green;
   }
   

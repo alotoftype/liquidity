@@ -1,0 +1,50 @@
+
+.about {
+    margin: 0 12px;
+    margin-bottom: 12px;
+    p { 
+        color: $peach;
+        font-size: 24px;
+        line-height: 3;
+        margin: 0  18px;
+    }
+    
+}
+.staff-members {
+    color: $peach;
+    margin: 0 12px;
+    h2 {
+        width: 12%;
+        border-bottom: 4px solid $peach;
+        color: $peach;
+        font-family: $Druk;
+        font-size: 50px;
+        font-variant: small-caps;
+        line-height: 1;
+        margin: 0 18px;
+        margin-bottom: 8px;
+        padding-bottom: 1px;
+    }
+    .container {
+        width: 100%;
+        margin: 0 6px;
+        display: flex;
+        flex-wrap: wrap;
+    
+    .staff {
+    width: calc(50% - 24px);
+    box-sizing: content-box;
+    margin: 0 12px;
+
+    .title {
+        font-family: $Optima;
+    }
+    .name{
+        font-family: $Druk;
+        font-size: 50px;
+        margin-top: 12px;
+    }
+    }
+
+    }
+}

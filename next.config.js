@@ -6,7 +6,7 @@ const withOptimizedImages = require('next-optimized-images');
 
 module.exports = withPlugins([
   [withSass, {
-    cssModules: true,
+    cssModules: false,
     postcssLoaderOptions: {
       parser: true
     },

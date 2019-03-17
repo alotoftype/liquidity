@@ -3,6 +3,16 @@ import Layout from '../layouts/Main';
 
 export default () => (
   <Layout>
-    <h2>This is the party Page</h2>
+  <section>
+  <h2>Upcoming</h2>
+  <div className="container">
+
+  </div>
+  </section>
+ <section>
+   <h2>Past</h2>
+   <div className="container">
+   </div>
+ </section>
   </Layout>
 )
