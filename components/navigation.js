@@ -5,22 +5,22 @@ import Link from 'next/link';
     <ul>
     <li>
     <Link href="/about">
-      <a>About </a>
+      <a>about </a>
     </Link>
     </li>
     <li>
       <Link href="/party">
-      <a>Party</a>
+      <a>party</a>
       </Link>
     </li>
     <li>
       <Link href="/mixes">
-      <a>Mixes</a>
+      <a>mixes</a>
       </Link>
     </li>
     <li>
     <Link href="/community">
-      <a>Community</a>
+      <a>community</a>
     </Link>
     </li>
     </ul>

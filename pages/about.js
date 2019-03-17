@@ -2,7 +2,7 @@ import Layout from '../layouts/Main';
 import Staff from '../components/staff';
 
 export default () => (
-    <Layout >
+    <Layout title="About Page">
       <section className="about">
     <p>is a party by queer/women people who are tired
 of being harassed on the dancefloor, who want to see more diversity behind the decks, and to amplify those that may be marginalized elsewhere.
@@ -12,9 +12,9 @@ Our bookings are queer, trans, non-binary, and gender non- conforming folx, peop
   <section class="staff-members">
   <h2>staff</h2>
   <div className="container">
-  <Staff url="https://via.placeholder.com/700x950" name="KATIE SHANE" title="employee"/>
-  <Staff url="https://via.placeholder.com/700x950" name="MEENA PARASHAR" title="employee"/>
-  <Staff url="https://via.placeholder.com/700x950" name="EM FANG" title="employee"/>
+  <Staff url="https://via.placeholder.com/700x950/FF806B/FFFFFF" name="KATIE SHANE" title="employee"/>
+  <Staff url="https://via.placeholder.com/700x950/FF806B/FFFFFF" name="MEENA PARASHAR" title="employee"/>
+  <Staff url="https://via.placeholder.com/700x950/FF806B/FFFFFF" name="EM FANG" title="employee"/>
   </div>
   </section>
     </Layout>

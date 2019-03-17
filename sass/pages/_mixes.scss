@@ -1,0 +1,22 @@
+.mixes{
+    color: $peach;
+    h2{
+        font-family: $Optima;
+        font-weight: 200;
+        text-align: center;
+    }
+    .mix {
+        border-top: 1px solid $peach;
+        border-bottom: 1px solid $peach;
+
+        p {
+            font-family: $Druk;
+            font-size: 50px;
+            text-align: center;
+            line-height: 1;
+            letter-spacing: .2em;
+            margin: 16px 0;
+        }
+        
+      }
+}

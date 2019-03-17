@@ -4,6 +4,7 @@
 @import './base/variables';
 @import './layout/layout';
 @import './pages/about';
+@import './pages/mixes';
 
 
 .example {
@@ -15,6 +16,8 @@ header {
   display: flex;
   justify-content: center;
   padding: 24px 0;
+  z-index: 3;
+  position: relative;
   ul {
     margin: 0 auto;
     li {
@@ -25,8 +28,10 @@ header {
       padding: 0 24px;
     }
     a {
+      font-variant: small-caps;
+      letter-spacing: .2rem;
       text-decoration: none;
-      color: $peach;
+      color: $red;
     }
   }
 }
@@ -34,10 +39,28 @@ main {
   padding: 0 48px;
 }
 .greeting {
-  h2,
-  p {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .homepage-content {
+    position: relative;
     text-align: center;
-    color: blue;
+    color: #fff;
+    width: 50%;
+    margin-top: 10%;
+
+    h1 {
+      font-family: $Druk;
+    }
+    p {
+      margin: 0 48px;
+      font-family: $Optima;
+    }
   }
 }
 .about {
@@ -48,9 +71,4 @@ main {
   display: flex;
   flex-direction: column;
 }
-.mix {
-  p {
-    color: green;
-  }
-  
-}
+
