@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "now-build": "next build",
+    "now-build": "next build && next export -o dist",
     "build": "next build",
     "start": "next start -p 8000",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,7 @@
     "@inlet/react-pixi": "^0.5.7",
     "@zeit/next-sass": "^1.0.1",
     "animate.css": "^3.7.0",
-    "next": "^8.0.3",
+    "next": "canary",
     "next-compose-plugins": "^2.1.1",
     "next-fonts": "^0.17.0",
     "next-images": "^1.1.1",
