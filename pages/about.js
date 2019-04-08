@@ -3,19 +3,32 @@ import Staff from '../components/staff';
 
 export default () => (
     <Layout title="About Page">
-      <section className="about">
-    <p>is a party by queer/women people who are tired
-of being harassed on the dancefloor, who want to see more diversity behind the decks, and to amplify those that may be marginalized elsewhere.
-(But mostly we just love to dance to powerful beats.)
-Our bookings are queer, trans, non-binary, and gender non- conforming folx, people of color, and women.</p>
-</section>
-  <section class="staff-members">
-  <h2>staff</h2>
-  <div className="container">
-  <Staff url="https://via.placeholder.com/700x950/FF806B/FFFFFF" name="KATIE SHANE" title="employee"/>
-  <Staff url="https://via.placeholder.com/700x950/FF806B/FFFFFF" name="MEENA PARASHAR" title="employee"/>
-  <Staff url="https://via.placeholder.com/700x950/FF806B/FFFFFF" name="EM FANG" title="employee"/>
-  </div>
-  </section>
+        <section className="about">
+            <p className="container is-centered">
+                Liquidity started as a small party in the back room of a
+                punk bar in Bushwick, Brooklyn to address the lack of
+                diversity in NYC underground dance music.
+            </p>
+        </section>
+        <section className="staff-members">
+            <h2>staff</h2>
+            <div className="columns is-multiline">
+                <Staff
+                    url="https://via.placeholder.com/900x1200/FF806B/FFFFFF"
+                    name="KATIE SHANE"
+                    title="founder"
+                />
+                <Staff
+                    url="https://via.placeholder.com/900x1200/FF806B/FFFFFF"
+                    name="MEENA PARASHAR"
+                    title="founder"
+                />
+                <Staff
+                    url="https://via.placeholder.com/900x1200/FF806B/FFFFFF"
+                    name="EM FANG"
+                    title="Designer & Partner"
+                />
+            </div>
+        </section>
     </Layout>
-)
+);

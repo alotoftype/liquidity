@@ -1,11 +1,9 @@
 @font-face {
-  font-family: "Optima";
-  src: url("../fonts/optima_.otf") format("opentype"),
-       url("../fonts/Optima.ttf") format ("truetype");
+  font-family: "optima";
+  src: url("../fonts/optima_.otf") format("opentype"), url("../fonts/Optima.ttf") format ("truetype");
 }
 
 @font-face {
-   font-family: "Druk";
-   src: url("../fonts/DrukWide-Medium.ttf") format("truetype"),
-        url("../fonts/DrukWide-Medium.otf") format("opentype");
+  font-family: "druk";
+  src: url("../fonts/DrukWide-Medium.ttf") format("truetype"), url("../fonts/DrukWide-Medium.otf") format("opentype");
 }

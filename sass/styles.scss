@@ -1,74 +1,121 @@
+@charset "utf-8";
+//@import "../node_modules/normalize-scss/sass/normalize/_import-now";
+@import "../node_modules/bulma/bulma.sass";
+@import "./typography/fonts";
+@import "./base/variables";
+@import "./base/mixin";
+@import "./layout/layout";
+@import "./pages/community";
+@import "./pages/about";
+@import "./pages/mixes";
+@import "./pages/_party";
 
-@import '../node_modules/normalize-scss/sass/normalize/_import-now';
-@import './typography/fonts';
-@import './base/variables';
-@import './layout/layout';
-@import './pages/about';
-@import './pages/mixes';
-
-
-.example {
-  font-size: $font-size;
+html,
+body {
+  height: 100%;
+  font-size: 16px;
 }
+
 
 header {
-  height: 50px;
+  background: $blue;
+  height: 75px;
   display: flex;
-  justify-content: center;
-  padding: 24px 0;
+  justify-content: space-between;
+  padding: 6px 0;
   z-index: 3;
   position: relative;
-  ul {
-    margin: 0 auto;
-    li {
-      font-family: $Druk;
-      font-weight: bold;
-      font-size: 30px;
-      display: inline-block;
-      padding: 0 24px;
-    }
-    a {
-      font-variant: small-caps;
-      letter-spacing: .2rem;
-      text-decoration: none;
-      color: $red;
-    }
+
+  @media screen and (max-width: 475px) {
+    height: 75px;
+    display: block;
+    padding-top: 12px;
   }
 }
-main {
-  padding: 0 48px;
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+
+  @media screen and (max-width: 475px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
 }
+
+.nav-item {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  font-family: $optima;
+  font-weight: normal;
+  font-size: 30px;
+  display: inline-block;
+  padding: 0 24px;
+
+  a {
+    font-variant: small-caps;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    color: $red;
+  }
+}
+
+main {
+  background: $blue;
+  padding: 24px 48px;
+  min-height: 100vh;
+}
+
 .greeting {
+
   display: flex;
   align-content: center;
   justify-content: center;
-  .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  width: 100%;
+  height: 100%;
+  position: relative;
+
   .homepage-content {
     position: relative;
     text-align: center;
-    color: #fff;
+    color: $peach;
     width: 50%;
     margin-top: 10%;
 
+
+
     h1 {
-      font-family: $Druk;
+      font-family: $druk;
+      font-size: 1.5rem;
     }
+
     p {
       margin: 0 48px;
-      font-family: $Optima;
+      font-family: $optima;
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: 475px) {
+      position: absolute;
+      top: 50%;
+      //transform: translateY(50%);
+      width: 100%;
+
+      p {
+        font-size: 2rem;
+        margin: 0;
+
+      }
     }
   }
 }
+
 .about {
   color: red;
   font-size: 24px;
 }
+
 .mixwrapper {
   display: flex;
   flex-direction: column;
 }
-

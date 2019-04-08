@@ -14,8 +14,12 @@
   "license": "ISC",
   "dependencies": {
     "@inlet/react-pixi": "^0.5.7",
+    "@sanity/client": "^0.140.11",
+    "@sanity/image-url": "^0.140.12",
     "@zeit/next-sass": "^1.0.1",
     "animate.css": "^3.7.0",
+    "axios": "^0.18.0",
+    "bulma": "^0.7.4",
     "next": "canary",
     "next-compose-plugins": "^2.1.1",
     "next-fonts": "^0.17.0",
@@ -28,6 +32,8 @@
     "react-dom": "^16.8.4"
   },
   "devDependencies": {
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-optipng": "^6.0.0",
     "imagemin-svgo": "^7.0.0"
